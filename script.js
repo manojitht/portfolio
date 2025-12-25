@@ -74,3 +74,28 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+// --- CONTACT MODAL FUNCTIONS ---
+const contactModal = document.getElementById("contact-modal");
+
+function openContactModal() {
+    contactModal.style.display = "block";
+}
+
+function closeContactModal() {
+    contactModal.style.display = "none";
+}
+
+// Update the Window Onclick to close BOTH modals if clicked outside
+window.onclick = function(event) {
+    // Existing Cert Modal
+    const certModal = document.getElementById("cert-modal");
+    if (event.target == certModal) {
+        certModal.style.display = "none";
+    }
+    // New Contact Modal
+    if (event.target == contactModal) {
+        contactModal.style.display = "none";
+    }
+}
