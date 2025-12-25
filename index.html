@@ -33,8 +33,8 @@
             <p class="mission-text">I engineer intelligent AI agents and high-performance backend systems optimized for scale.</p>
             
             <div class="cta-group">
-                <a href="#contact" class="btn btn-primary">INITIALIZE CONTACT</a>
-                <a href="Manojith Thiyageswarakumar - Resume.pdf" class="btn btn-secondary" download>DOWNLOAD DATA [CV]</a>
+                <a href="javascript:void(0)" class="btn btn-primary" onclick="openContactModal()">INITIALIZE CONTACT</a>
+                <a href="assets/files/Manojith Thiyageswarakumar - Resume.pdf" class="btn btn-secondary" download>DOWNLOAD DATA [RESUME]</a>
             </div>
 
             <div class="awards-ticker">
@@ -154,7 +154,7 @@
                             <li><span class="bullet">></span> Built NLP text summarization for German XML datasets (10K-30K words).</li>
                             <li><span class="bullet">></span> Reduced frontend bug density by 32%.</li>
                             <li><span class="bullet">></span> Optimized Intelligent Automated Publishing Platform.</li>
-                            <li><span class="bullet">></span> Tech Stack: Python, FastAPI, PostgreSQL, PG Vector, GPT-4, Langchain, Google OAuth2, Google Drive API, HTML, CSS, JavaScript.</li>
+                            <li><span class="bullet">></span> Tech Stack: Python, FastAPI, PHP, Laravel, JavaScript, React Js, MySQL, GPT-3, SonarQube.</li>
                         </ul>
                     </div>
 
@@ -180,28 +180,27 @@
         <h2 class="section-title"><span class="green-text">/</span> PRIME WORKS</h2>
         <div class="featured-project-container">
             <div class="featured-content">
-                <h3>RAG CONVERSATIONAL AGENT</h3>
-                <span class="status-badge">STATUS: DEPLOYED</span>
+                <h3>NEXUS INTELLIGENT LOGISTICS</h3>
+                <span class="status-badge">STATUS: IN DEVELOPMENT</span>
                 <p>
-                    Engineered an AI-powered agent for cloud-based parcel delivery. 
-                    Utilized <strong>Retrieval-Augmented Generation (RAG)</strong> and vector caching to generate 
-                    natural language insights from MongoDB sources.
+                    Architecting a cloud-native microservices platform for real-time fleet management. 
+                    Orchestrating high-concurrency geospatial data ingestion with event-driven architecture to enable autonomous dispatching and dynamic route optimization.
                 </p>
                 <ul class="tech-specs">
-                    <li><i class="fas fa-check"></i> Reduced OpenAI API costs by 40%</li>
-                    <li><i class="fas fa-check"></i> Integrated Demographic Visualizations</li>
-                    <li><i class="fas fa-check"></i> Stack: Python, LangChain, MongoDB, OpenAI</li>
+                    <li><i class="fas fa-check"></i> Designed event-driven microservices handling 10k+ concurrent connections</li>
+                    <li><i class="fas fa-check"></i> Implemented sub-50ms latency for real-time geospatial tracking</li>
+                    <li><i class="fas fa-check"></i> Integrated ML inference engine for dynamic ETA prediction</li>
+                    <li><i class="fas fa-check"></i> Stack: FastAPI, Docker, AWS (ECS), RabbitMQ, PostgreSQL (PostGIS)</li>
                 </ul>
-                <div class="project-actions">
+                <!-- <div class="project-actions">
                     <a href="#" class="btn btn-primary">VIEW DEMO</a>
                     <a href="#" class="btn btn-secondary">ARCHITECTURE</a>
-                </div>
+                </div> -->
             </div>
             <div class="featured-visual">
-                <div class="schematic-placeholder">
-                    <i class="fas fa-project-diagram"></i>
-                    <span>SYSTEM_ARCHITECTURE_V1.0</span>
-                </div>
+                <img src="assets/arch/nexus_architecture.png" alt="Nexus System Architecture Microservices Diagram" 
+                    class="architecture-img" onclick="openModal(this.src)">
+                <div class="arch-overlay">CLICK TO ENHANCE ARCHITECTURE</div>
             </div>
         </div>
     </section>
@@ -307,15 +306,35 @@
         <div id="caption"></div>
     </div>
 
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-box">
+            <span class="close-modal" onclick="closeContactModal()">&times;</span>
+            <h2 class="comms-title">> UPLINK ESTABLISHED</h2>
+            
+            <div class="contact-grid">
+                <a href="tel:+94777210098" class="contact-option">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+94 777210098</span>
+                </a>
+
+                <a href="mailto:manojithtjmkm@gmail.com" class="contact-option">
+                    <i class="fas fa-envelope"></i>
+                    <span>manojithtjmkm@gmail.com</span>
+                </a>
+            </div>
+            
+            <p class="comms-status">AVAILBLE FROM 6.00AM TO 11.00PM @ IST ZONE</p>
+        </div>
+    </div>
+
     <footer id="contact">
         <div class="footer-content">
             <h2>> PING MANOJITH ...</h2>
             <div class="social-links">
                 <a href="https://github.com/manojitht" target="_blank"><i class="fab fa-github"></i> GITHUB</a>
-                <a href="mailto:manojithtjmkm@gmail.com"><i class="fas fa-envelope"></i> EMAIL</a>
                 <a href="https://linkedin.com/in/manojith-thiyageswarakumar-25125b170" target="_blank"><i class="fab fa-linkedin"></i> LINKEDIN</a>
             </div>
-            <p class="copyright">SYSTEM ID: MANOJITH_V2.0 // © 2025</p>
+            <p class="copyright">DESIGNED & DEVELOPED BY MANOJITH THIYAGESWARAKUMAR.</p>
         </div>
     </footer>
 

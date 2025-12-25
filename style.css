@@ -296,6 +296,54 @@ body {
 .schematic-placeholder { text-align: center; color: #555; }
 .schematic-placeholder i { font-size: 3rem; display: block; margin-bottom: 10px; }
 
+/* --- ARCHITECTURE DIAGRAM STYLES --- */
+.featured-visual {
+    flex: 1;
+    height: 350px; /* Increased height slightly for better visibility */
+    background: #111; /* Darker background for the chart */
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Keeps image inside the border */
+}
+
+.architecture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the whole diagram is visible without cropping */
+    cursor: zoom-in; /* Changes mouse to magnifying glass */
+    transition: transform 0.3s ease;
+    padding: 10px; /* Space between border and diagram */
+}
+
+.architecture-img:hover {
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+    opacity: 0.9;
+}
+
+/* The "CLICK TO ENHANCE" Overlay */
+.arch-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--terminal-green);
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 5px 0;
+    font-family: var(--font-mono);
+    opacity: 0; /* Hidden by default */
+    transition: 0.3s;
+    pointer-events: none; /* Let clicks pass through to the image */
+}
+
+.featured-visual:hover .arch-overlay {
+    opacity: 1; /* Show on hover */
+}
+
 /* --- SKILLS GRID --- */
 .skills-grid {
     display: grid;
@@ -515,6 +563,65 @@ body {
 @media only screen and (max-width: 700px){
     .modal-content { width: 95%; }
     .close-modal { top: 20px; right: 20px; }
+}
+
+/* --- CONTACT MODAL STYLES --- */
+.contact-box {
+    background: #0f0f0f; /* Darker than normal modal */
+    border: 2px solid var(--terminal-green);
+    padding: 40px;
+    text-align: center;
+    max-width: 500px; /* Compact size */
+    box-shadow: 0 0 50px rgba(51, 255, 51, 0.15);
+}
+
+.comms-title {
+    font-family: var(--font-header);
+    color: var(--terminal-green);
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 15px;
+    animation: blink 1.5s infinite;
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.contact-option i {
+    color: var(--terminal-green);
+    font-size: 1.2rem;
+}
+
+.contact-option:hover {
+    border-color: var(--terminal-green);
+    background: rgba(51, 255, 51, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(51, 255, 51, 0.2);
+}
+
+.comms-status {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #555;
+    letter-spacing: 2px;
 }
 
 /* --- FOOTER (FIXED COLLISION) --- */
