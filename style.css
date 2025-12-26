@@ -232,6 +232,24 @@ body {
     opacity: 0.5;
 }
 
+.ai-core-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid var(--terminal-green);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Sit on top of real photo */
+}
+
+/* ON HOVER: Reveal the AI Core */
+.hero-image-container:hover .ai-core-img {
+    opacity: 1;
+}
+
 /* --- SECTIONS GENERAL --- */
 .section { padding: 100px 10%; }
 
@@ -622,6 +640,70 @@ body {
     font-size: 0.8rem;
     color: #555;
     letter-spacing: 2px;
+}
+
+/* --- HONOR CARDS --- */
+.honor-card {
+    border-top: 3px solid var(--terminal-green); /* Top accent to look like a medal ribbon */
+}
+
+.honor-card .fa-trophy { color: gold; margin-right: 10px; }
+.honor-card .fa-medal { color: silver; margin-right: 10px; }
+.honor-card .fa-gavel { color: var(--terminal-green); margin-right: 10px; }
+
+/* --- TESTIMONIAL / LOG CARDS --- */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.log-card {
+    background: rgba(0, 20, 0, 0.2); /* Very dark green tint */
+    border: 1px solid #333;
+    padding: 30px;
+    position: relative;
+    border-left: 3px solid var(--terminal-green); /* Green accent on left */
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #444;
+    padding-bottom: 10px;
+}
+
+.log-id {
+    font-size: 0.7rem;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.log-message {
+    font-style: italic;
+    color: #ccc;
+    font-family: var(--font-mono);
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.log-author {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.author-role {
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: 15px; /* Indent role slightly */
+}
+
+/* Hover Effect */
+.log-card:hover {
+    background: rgba(51, 255, 51, 0.05);
+    border-color: var(--terminal-green);
+    box-shadow: 0 0 15px rgba(51, 255, 51, 0.1);
 }
 
 /* --- FOOTER (FIXED COLLISION) --- */
