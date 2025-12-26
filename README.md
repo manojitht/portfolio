@@ -31,33 +31,14 @@ The interface is designed with a **Cyberpunk / Terminator-inspired aesthetic**, 
 ### CORE MODULES [Tech Stack]
 | Domain | Technologies |
 | :--- | :--- |
-| **🧠 AI & ML** | OpenAI GPT-4, RAG (LangChain), Llama 3, Scikit-learn, CrewAI |
+| **🧠 AI & ML** | OpenAI GPT-4, Gemini, Qwen, RAG (LangChain), Llama 3, Scikit-learn, CrewAI |
 | **⚙️ Backend** | Python (FastAPI, Django), Java, Microservices Architecture |
 | **☁️ Cloud & DevOps** | AWS (SageMaker, EC2, ECS), Docker, Kubernetes, CI/CD |
-| **🗄️ Data Engineering** | PostgreSQL (PostGIS), MongoDB, Vector DBs (Pinecone/Chroma) |
+| **🗄️ Database** | PostgreSQL (PostGIS), MongoDB, Vector DBs (Pinecone/Chroma) |
 
 ### 🏆 ACHIEVEMENTS DETECTED
 * **🥇 Gold Winner:** SLASSCOM National Ingenuity Awards 2025 (Team)
 * **🥈 Silver Award:** NBQSA National ICT Awards 2025 (Team)
-
----
-
-## 🚀 DEPLOYMENT PROTOCOLS
-
-To run this system locally on your machine:
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/manojitht/manojitht.github.io.git](https://github.com/manojitht/manojitht.github.io.git)
-    ```
-
-2.  **Navigate to Directory:**
-    ```bash
-    cd manojitht.github.io
-    ```
-
-3.  **Initiate Sequence:**
-    Open `index.html` in your preferred browser.
 
 ---
 
@@ -68,4 +49,4 @@ To run this system locally on your machine:
 * **LinkedIn:** [Manojith Thiyageswarakumar](https://linkedin.com/in/manojith-thiyageswarakumar-25125b170)
 
 ---
-*SYSTEM ID: MANOJITH_V2.0 // © 2025*
+*SYSTEM ID: MANOJITH // © 2025*
